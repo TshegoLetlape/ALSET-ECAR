@@ -1,3 +1,7 @@
+body {
+  overflow-y: scroll;
+}
+
 #cards {
   display: flex;
   gap: 10px;
@@ -14,6 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 #hero {
   background: url(assets/heroimage.avif) center no-repeat;
@@ -25,4 +30,93 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.card {
+  width: 1024px;
+  height: 580px;
+  padding-left: 25px;
+  background-size: cover;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+}
+
+#cards {
+  margin-top: 50px;
+  width: 100%;
+  overflow: scroll;
+  height: 500px;
+  gap: 35px;
+  
+}
+
+#one {
+  background: url(assets/model3.avif) center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 250px);
+}
+
+#two {
+  background: url(assets/modely.png) center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 250px);
+}
+
+#three {
+  background: url(assets/cybertruck.png) center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 250px);
+}
+
+#four {
+  background: url(assets/models.png) center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 250px);
+}
+
+#five {
+  background: url(assets/modelx.png) center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: calc(100vh - 250px);
+}
+
+button {
+  width: 146px;
+  height: 26px;
+  background: white;
+  border-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 15px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.btn-group {
+  display: flex;
+  margin-bottom: 50px;
+}
+.btn-dark {
+  background-color: #3457b1;
+  color: white;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  color: gray;
 }
